@@ -6,7 +6,7 @@ function App() {
 
   useEffect(() => {
     // Calling the Truth from the Mirror (Backend Port 5000)
-    axios.get('http://localhost:5000/')
+    axios.get('https://nsdc-genius-backend.onrender.com/')
       .then(res => setData(res.data))
       .catch(err => setData({ status: "BACKEND_OFFLINE", identity: "ERROR" }));
   }, []);
